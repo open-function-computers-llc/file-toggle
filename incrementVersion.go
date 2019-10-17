@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 )
 
@@ -15,7 +14,6 @@ func incrementVersion() error {
 	if next > len(fileVersions)-1 {
 		next = 0
 	}
-	fmt.Println(fileToWrite)
 
 	return copy(fileVersions[next], fileToWrite)
 }

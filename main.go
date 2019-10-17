@@ -23,7 +23,7 @@ func main() {
 
 	// all file and file versions must exist
 	if !fileExists(fileToWrite) {
-		panic("target files must exist: " + fileToWrite)
+		panic("target file must exist: " + fileToWrite)
 	}
 	for _, path := range fileVersions {
 		if !fileExists(path) {
