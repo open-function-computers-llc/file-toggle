@@ -1,0 +1,11 @@
+[Unit]
+Description=A tiny program that can swap two different files that is triggered through a web api. 
+
+[Service]
+# Note: Either your .env file must exist in the working directory, or you must set the environment variables here
+WorkingDirectory=/path/to/
+ExecStart=/path/to/file-toggle
+
+
+[Install]
+WantedBy=multi-user.target
